@@ -147,6 +147,9 @@ lcd_init(16);
 while (1)
       {
       // Place your code here
-
+      lcd_gotoxy(0,0);
+      lcd_putsf("Hello World!");
+      lcd_gotoxy(0,1);
+      lcd_putsf("DSP");      
       }
 }
