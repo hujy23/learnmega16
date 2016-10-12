@@ -147,12 +147,13 @@ void main(void)
 	lcd_init(16);
 
 	while (1){
-	      lcd_gotoxy(0,0);
-            lcd_putsf("Hello World");
             for (i=0; i<10; i++) {
-                  lcd_gotoxy(0,1);
+	            lcd_gotoxy(0,0);
+                  lcd_putsf("Hello World");
+                  lcd_gotoxy(i,1);
                   lcd_putchar('0'+i);
                   delay_ms(1000);
+                  lcd_clear();
             }
 	}
 }
