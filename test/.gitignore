@@ -22,5 +22,6 @@ Obj
 *.aws
 
 #others
+*.dbg
 *.c~
 *.txt
